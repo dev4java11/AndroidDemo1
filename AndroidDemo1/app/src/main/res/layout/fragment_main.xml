@@ -11,30 +11,36 @@
     tools:context="pe.com.wiverncorp.androiddemo1.MainActivityFragment"
     tools:showIn="@layout/activity_main">
 
-    <TextView
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hapticFeedbackEnabled="false"
+        android:clickable="false" >
+    </ListView>
+
+    <Button
+        android:text="@string/app_search_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/app_title"
-        android:id="@+id/textView" />
+        android:layout_alignTop="@+id/editText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/button"
+        android:layout_toRightOf="@+id/editText"
+        android:layout_toEndOf="@+id/editText" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
-        android:layout_marginTop="27dp"
+        android:layout_marginTop="35dp"
         android:id="@+id/editText"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <ListView
-        android:id="@+id/listView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/editText"
+        android:hint="@string/app_placelholder_text"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 

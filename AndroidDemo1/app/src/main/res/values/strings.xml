@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">AndroidDemo1</string>
     <string name="action_settings">Settings</string>
-
     <string name="app_title">Lista de Posts</string>
+    <string name="app_placelholder_text">ID del post</string>
+    <string name="app_search_button">Buscar</string>
 </resources>
